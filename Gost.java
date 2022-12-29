@@ -47,6 +47,26 @@ public class Gost {
         }
         return new String(reverse);
     }
+    
+    // 127, 0 - 31,
+    public String generateStringKey() {
+        String s = "";
+        for (int y = 0;y < 32;y++) {
+            int lk = (int) (Math.random() * 256.0);
+            if(lk == 127 || lk < 32) {
+                if (lk == 127) {
+                    int lk1 = lk + (int) Math.random() * 127;
+                    s += (char) lk1;
+                } else {
+                    int lk1 = lk + 31;
+                    s += (char) lk1;
+                }
+            } else {
+                s += (char) lk;
+            }
+        }
+        return s;
+    }
 
     private String[] passInit(String key) {
         String[] keys = new String[8];
