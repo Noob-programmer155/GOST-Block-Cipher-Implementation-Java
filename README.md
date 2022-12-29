@@ -1,2 +1,2 @@
 # GOST-Implementation-Java
-GOST implementation algorithm with java programming language
+GOST Block Cipher implementation algorithm with java programming language
