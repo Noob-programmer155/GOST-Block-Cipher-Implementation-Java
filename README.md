@@ -2,7 +2,7 @@
 GOST Block Cipher implementation algorithm with java programming language
 
 # Requirements
-Java 8
+Java 10/11
 
 # How to Run
 ```
